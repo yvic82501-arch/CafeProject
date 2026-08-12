@@ -55,9 +55,7 @@ const getQueueByVenue = async (req, res, next) => {
 
 const getQueueById = async (req, res, next) => {
   try {
-    console.log("ID:", req.params.id);
     const queue = await Queue.findById(req.params.id);
-    console.log("QUEUE:", queue);
 
     if (!queue) {
       return res.status(404).json({
@@ -315,8 +313,6 @@ const serveQueue = async (req, res, next) => {
     }
 
     const currentUsers = queue.queue.find((user) => user.status === "waiting");
-
-    console.log("QUEUE USERS:", queue.queue);
 
     if (!currentUsers) {
       return res.status(400).json({
