@@ -44,7 +44,7 @@ function Venue() {
                 </span>
               </p>
               <a
-                href={`/queue/${queue._id}`}
+                href={`/queue/${queueId}`}
                 className="inline-block mt-4 bg-green-600 text-white px-4 py-2 rounded-lg hover:shadow-lg"
               >
                 View Queue
