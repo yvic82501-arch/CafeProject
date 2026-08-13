@@ -35,13 +35,13 @@ function AdminDashboard() {
 
         <button
           onClick={() => navigate("/admin/add-queue")}
-          className="bg-green-600 text-white px-5 py-2 rounded-lg mb-6 hover:shadow-lg "
+          className="bg-green-600 text-white px-5 py-2 rounded-lg mb-6 cursor-pointer hover:shadow-lg "
         >
           + Add Queue
         </button>
         <button
           onClick={() => navigate("/admin/dash-stat")}
-          className="bg-purple-600 text-white ml-2 px-5 py-2 rounded-lg mb-6 hover:shadow-lg"
+          className="bg-purple-600 text-white ml-2 px-5 py-2 rounded-lg mb-6 cursor-pointer hover:shadow-lg"
         >
           Dashboard Stats
         </button>
@@ -65,7 +65,7 @@ function AdminDashboard() {
 
                     <button
                       onClick={() => navigate(`/admin/queue/${queue._id}`)}
-                      className="bg-sky-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 hover:shadow-lg"
+                      className="bg-sky-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 cursor-pointer hover:shadow-lg"
                     >
                       Manage Queue
                     </button>

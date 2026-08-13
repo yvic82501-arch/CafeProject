@@ -116,33 +116,33 @@ function AdminQueue() {
           <div className="flex gap-3 flex-wrap">
             <button
               onClick={serveUser}
-              className="bg-green-600 text-white px-5 py-2 rounded-lg hover:shadow-lg"
+              className="bg-green-600 text-white px-5 py-2 rounded-lg cursor-pointer hover:shadow-lg"
             >
               Serve
             </button>
 
             <button
               onClick={skipUser}
-              className="bg-yellow-500 text-white px-5 py-2 rounded-lg hover:shadow-lg"
+              className="bg-yellow-500 text-white px-5 py-2 rounded-lg cursor-pointer hover:shadow-lg"
             >
               Skip
             </button>
 
             <button
               onClick={pauseQueue}
-              className="bg-blue-600 text-white px-5 py-2 rounded-lg hover:shadow-lg"
+              className="bg-blue-600 text-white px-5 py-2 rounded-lg cursor-pointer hover:shadow-lg"
             >
               {queue.isActive ? "Pause" : "Resume"}
             </button>
             <button
               onClick={resetQueue}
-              className="bg-red-600 text-white px-5 py-2 rounded-lg hover:shadow-lg"
+              className="bg-red-600 text-white px-5 py-2 rounded-lg cursor-pointer hover:shadow-lg"
             >
               Reset Queue
             </button>
             <button
               onClick={() => navigate(`/admin/queue/${queueId}/analytics`)}
-              className="bg-green-600 text-white px-5 py-2 rounded-lg hover:shadow-lg"
+              className="bg-green-600 text-white px-5 py-2 rounded-lg cursor-pointer hover:shadow-lg"
             >
               Analytics
             </button>
