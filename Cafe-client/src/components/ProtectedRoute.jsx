@@ -6,11 +6,11 @@ function ProtectedRoute({ children }) {
   const navigate = useNavigate();
 
   if (!token || !user) {
-    return <Navigate to="/login" />;
+    return <navigate to="/login" />;
   }
 
   if (user.role !== "admin" && user.role !== "superadmin") {
-    return <Navigate to="/" />;
+    return <navigate to="/" />;
   }
 
   return children;
