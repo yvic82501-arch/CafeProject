@@ -60,7 +60,7 @@ function Login() {
           <button
             type="submit"
             disabled={loading}
-            className="w-full bg-blue-600 text-white py-3 rounded-lg mt-6 disabled:bg-gray-400 hover:shadow-lg"
+            className="w-full bg-blue-600 text-white py-3 rounded-lg mt-6 disabled:bg-gray-400 cursor-pointer hover:shadow-lg"
           >
             {loading ? "Logging in.." : "Login"}
           </button>

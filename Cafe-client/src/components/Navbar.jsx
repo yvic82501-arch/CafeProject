@@ -16,23 +16,26 @@ function Navbar() {
           QueueIt..
         </Link>
         <div className="flex gap-6">
-          <Link to="/" className="text-white-hover-underline">
+          <Link to="/" className="text-white hover:underline">
             Home
           </Link>
 
           {token ? (
-            <button onClick={logout} className="text-white-hover-underline">
+            <button
+              onClick={logout}
+              className="text-white cursor-pointer hover:underline"
+            >
               Logout
             </button>
           ) : (
-            <Link to="/login" className="text-white-hover-underline">
+            <Link to="/login" className="text-white hover:underline">
               Login
             </Link>
           )}
-          <Link to="/admin" className="text-white-hover-underline">
+          <Link to="/admin" className="text-white hover:underline">
             Admin
           </Link>
-          <Link to="/register" className="text-white-hover-underline">
+          <Link to="/register" className="text-white hover:underline">
             Register
           </Link>
         </div>

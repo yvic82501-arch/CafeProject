@@ -26,7 +26,6 @@ function Queue() {
   const joinQueue = async () => {
     try {
       const response = await api.post(`/queue/${queueId}/join`);
-      console.log(response.data);
 
       navigate(`/status/${queueId}`);
     } catch (error) {
@@ -57,13 +56,13 @@ function Queue() {
           <button
             onClick={joinQueue}
             disabled={loading || !queue.isActive}
-            className="w-full mt-8 bg-sky-600 text-white py-3 rounded-lg disabled:bg-gray-400 hover:shadow-lg"
+            className="w-full mt-8 bg-sky-600 text-white py-3 rounded-lg disabled:bg-gray-400 cursor-pointer hover:shadow-lg"
           >
             {loading ? "Joining..." : "Join Queue"}
           </button>
           <button
             onClick={() => navigate("/history")}
-            className="bg-yellow-600 text-white mt-2 px-4 py-2 rounded-lg hover:shadow-lg"
+            className="bg-yellow-600 text-white mt-2 px-4 py-2 rounded-lg cursor-pointer hover:shadow-lg"
           >
             History
           </button>
